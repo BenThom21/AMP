@@ -5,7 +5,7 @@
    <!-- TODO link to real page -->
    <link rel="canonical" href="$Real_URL">
    <title>The Thompson GoFast Model Specs | Thompson Motors</title>
-   <description>The specs and details of the Thompson GoFast like 0-60 speed, torque, MPG, and more. Ask for a test drive today from your Thompson Motors dealer.</description>
+   <meta property = "description" content = "The specs and details of the Thompson GoFast like 0-60 speed, torque, MPG, and more. Ask for a test drive today from your Thompson Motors dealer.">
    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
    <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -20,13 +20,13 @@
     <div class = "logo">
       <amp-img src = "" layout="responsive"> </amp-img>
     </div>
-    <div class = "navbar">
-      <ul>
-        <li><a href = "#models">Models</a> </li>
-        <!-- border-left: thick solid #ff0000 -->
-        <li class = "verticalLine"><a href = "#menu">Menu</a> </li>
-      </ul>
-    </div>   
+    <amp-sidebar id="drawermenu" layout="nodisplay">
+      <a href="#Home-Link" class="caps text-decoration-none block p1">Thompson Motors</a>
+      <hr/>
+      <a class="text-decoration-none block p1" href="#Nav-link">All Thompson Models</a>
+      <a class="text-decoration-none block p1" href="#Nav-link">GoFast Models</a>
+      <a class="text-decoration-none block p1" href="#Nav-link">Login</a>
+    </amp-sidebar>   
   </nav>
   
   <div class = "headerImage">
@@ -81,7 +81,22 @@
     </div>
   </div>
 
-
+  <div class="m1">
+    <amp-social-share type="twitter"
+      width="30"
+      height="22"></amp-social-share>
+    <amp-social-share type="facebook"
+      width="30"
+      height="22"
+      data-attribution="254325784911610"></amp-social-share>
+    <amp-social-share type="gplus"
+      width="30"
+      height="22"></amp-social-share>
+    <amp-social-share type="email"
+      width="30"
+      height="22"></amp-social-share>
+  </div>
+  
   
  </body>
 </html>
