@@ -42,7 +42,7 @@
     <!-- Enter all the menu sh*t in here! -->
   </div>
 
-<!-- Begin the actual specs -- want to use a tbale in an amp page? -->
+<!-- Begin the actual specs -- want to use a table in an amp page? -->
 
   <div class = "specArea">
     <div class="spec">
@@ -75,9 +75,9 @@
       <span class="specDetail">Fuel Tank Capacity</span>
     </div>
     <div class="spec">
-      <h3 class="specHead">MSRP</h3>
-      <hr>
-      <span class="specDetail">From $ 93,910.00</span>
+      <p class="price-description">MSRP:
+        <span [text]="product[product.selectedColor].sizes[product.selectedSize]">From $93,910.00</span>
+      </p>
     </div>
   </div>
 
