@@ -27,13 +27,38 @@
   <div class = "logo">
     <amp-img src = "" height= layout="responsive"> </amp-img>
   </div>
-  <amp-sidebar id="drawermenu" layout="nodisplay">
+
+  <!-- sidebar menu -->
+  <!-- <amp-sidebar id="drawermenu" layout="nodisplay">
     <a href="#Home-Link" class="caps text-decoration-none block p1">Thompson Motors</a>
     <hr/>
     <a class="text-decoration-none block p1" href="#Nav-link">All Thompson Models</a>
     <a class="text-decoration-none block p1" href="#Nav-link">GoFast Models</a>
     <a class="text-decoration-none block p1" href="#Nav-link">Login</a>
-  </amp-sidebar>   
+  </amp-sidebar>    -->
+
+  <amp-sidebar id="sidebar-right"
+    layout="nodisplay"
+    side="right">
+    <amp-img class="amp-close-image"
+      src="/img/ic_close_black_18dp_2x.png"
+      width="20"
+      height="20"
+      alt="close sidebar"
+      on="tap:sidebar-left.close"
+      role="button"
+      tabindex="0">
+    </amp-img>
+    <nav toolbar="(min-width: 784px)"
+      toolbar-target="target-element-right">
+    </nav>
+    <ul>
+      <li> Nav item 5</li>
+      <li> Nav item 6</li>
+    </ul>
+  </amp-sidebar>
+  <button on="tap:sidebar-right.toggle"
+  class="ampstart-btn caps m2">Menu</button>
   
   <div class = "headerImage">
     <amp-img src="" height= layout="responsive" alt="car modelQ"></amp-img>
