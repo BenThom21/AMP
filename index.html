@@ -12,16 +12,20 @@
    <!-- Necessary scripts for AMP elements -->
    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 
    <!-- make sure this is the only "amp-custom" style tag -->
    <style amp-custom>
      /* import styles here, right? */
+     .bold {
+       font-weight: bold;
+     }
    </style>
  </head>
 
  <body>
   <div class = "logo">
-    <amp-img src = "" layout="responsive"> </amp-img>
+    <amp-img src = "" height= layout="responsive"> </amp-img>
   </div>
   <amp-sidebar id="drawermenu" layout="nodisplay">
     <a href="#Home-Link" class="caps text-decoration-none block p1">Thompson Motors</a>
@@ -32,69 +36,85 @@
   </amp-sidebar>   
   
   <div class = "headerImage">
-    <amp-img src="" layout="responsive" alt="car modelQ"></amp-img>
+    <amp-img src="" height= layout="responsive" alt="car modelQ"></amp-img>
   </div>
 
   <div class = "headText">
     <h1>Technical Specs</h1>
-    <span class="head">GoFast Models</span>
+    <h2>GoFast Models</h2>
   </div>
 
   <div class="menu">
     <!-- Enter all the menu sh*t in here! -->
+    <!-- Don't I want to put this at the top? -->
   </div>
+
+
 
 <!-- Begin the actual specs -- want to use a table in an amp page? -->
+<amp-accordion>
+  <section>
+    <h4>Engine</h4>
+    <ul class="description p1">
+      <li><span class="bold">No. of Cylinders:</span> Boxer 6</li>
+      <li><span class="bold">Displacement:</span> 3.01</li>
+      <li><span class="bold">Engine Layout:</span> Rear Engine</li>
+      <li><span class="bold">Horse Power:</span> 370 hp</li>
+      <li><span class="bold">Max. Torque:</span> 331 lb.-ft.</li>
+      <li><span class="bold">Compression Ratio:</span> 10.0 : 1</li>
+    </ul>
+  </section>
+  <section>
+    <h4>Fuel Consumption</h4>
+    <ul class="description p1">
+      <li><span class="bold">City:</span> 22 mpg</li>
+      <li><span class="bold">Highway:</span> 30 mpg</li>
+      <li><span class="bold">Combined:</span> 25 mpg</li>
+    </ul>
+  </section>
+  <section>
+    <h4>Performance</h4>
+    <ul class="description p1">
+      <li><span class="bold">Top Speed:</span> 182 mph</li>
+      <li><span class="bold">0-60 mph:</span> 4.2 sec</li>
+    </ul>
+  </section>
+  <section>
+    <h4>Transmission</h4>
+    <ul class="description p1">
+      <li><span class="bold">Driveline Layout:</span> Rear-wheel drive</li>
+    </ul>
+  </section>
+  <section>
+    <h4>Body</h4>
+    <ul class="description p1">
+      <li><span class="bold">Length:</span> 177.1 in. (4,499 mm)</li>
+      <li><span class="bold">Width:</span> 71.2 in. (w/o mirrors)</li>
+      <li><span class="bold">Height:</span> 50.9 in. (1,294 mm)</li>
+      <li><span class="bold">Wheelbase:</span> 96.5 in. (2,450 mm)</li>
+      <li><span class="bold">Drag Coefficient (Cd):</span> (Cd): 0.29</li>
+      <li><span class="bold">Curb Weight:</span> 3,152 lbs</li>
+      <li><span class="bold">Fuel Tank Capacity:</span> 16.9 gal</li>
+    </ul>
+  </section>
+</amp-accordion>
 
-  <div class = "specArea">
-    <div class="spec">
-      <h3 class="specHead">Engine</h3>
-      <span class="specDetail">Displacement</span>
-      <span class="specDetail">Horse Power</span>
-      <span class="specDetail">Torque</span>
-    </div>
-    <div class="spec">
-      <h3 class="specHead">Fuel Consumption</h3>
-      <span class="specDetail">City</span>
-      <span class="specDetail">Highway</span>
-    </div>
-    <div class="spec">
-      <h3 class="specHead">Performance</h3>
-      <span class="specDetail">Top Speed</span>
-      <span class="specDetail">0-60</span>
-    </div>
-    <div class="spec">
-      <h3 class="specHead">Body</h3>
-      <span class="specDetail">Length</span>
-      <span class="specDetail">Width</span>
-      <span class="specDetail">Height</span>
-      <span class="specDetail">Wheelbase</span>
-      <span class="specDetail">Gross Vehicle Weight Rating (GVWR)</span>
-      <span class="specDetail">Fuel Tank Capacity</span>
-    </div>
-    <div class="spec">
-      <p class="price-description">MSRP:
-        <span [text]="product[product.selectedColor].sizes[product.selectedSize]">From $93,910.00</span>
-      </p>
-    </div>
-  </div>
-
-  <!-- Need an app ID for social buttons to work -->
-  <div class="m1">
-    <amp-social-share type="twitter"
-      width="30"
-      height="22"></amp-social-share>
-    <amp-social-share type="facebook"
-      width="30"
-      height="22"
-      data-attribution="254325784911610"></amp-social-share>
-    <amp-social-share type="gplus"
-      width="30"
-      height="22"></amp-social-share>
-    <amp-social-share type="email"
-      width="30"
-      height="22"></amp-social-share>
-  </div>
+<!-- Need an app ID for social buttons to work -->
+<div class="m1">
+  <amp-social-share type="twitter"
+    width="30"
+    height="22"></amp-social-share>
+  <amp-social-share type="facebook"
+    width="30"
+    height="22"
+    data-attribution="254325784911610"></amp-social-share>
+  <amp-social-share type="gplus"
+    width="30"
+    height="22"></amp-social-share>
+  <amp-social-share type="email"
+    width="30"
+    height="22"></amp-social-share>
+</div>
   
   
  </body>
