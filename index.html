@@ -31,23 +31,14 @@
   <amp-sidebar id="sidebar-right"
     layout="nodisplay"
     side="right">
-    <!-- What is this image? the menu toggle still works without it -->
-
-    <!-- <amp-img class="amp-close-image"
-      src="/img/ic_close_black_18dp_2x.png"
-      width="20"
-      height="20"
-      alt="close sidebar"
-      on="tap:sidebar-left.close"
-      role="button"
-      tabindex="0"> -->
     </amp-img>
     <nav toolbar="(min-width: 784px)"
       toolbar-target="target-element-right">
     </nav>
     <ul>
-      <li> Nav item 5</li>
-      <li> Nav item 6</li>
+      <li>All Models</li>
+      <li>Thompson Motors</li>
+      <li>Login</li>
     </ul>
   </amp-sidebar>
   
@@ -163,6 +154,25 @@
     class="mr2"></amp-social-share>
 </p>
   
-  
+  <!-- USER ANALYTICS - MAKE SURE TO COMMENT FOR VALIDATION-->
+  <amp-analytics type="googleanalytics">
+    <script type="application/json">
+      {
+        "vars": {
+          <!-- get this in your google analytics acct -->
+          "account": ""
+        },
+        "triggers": {
+          "default pageview": {
+            "on": "visible",
+            "request": "pageview",
+            "vars": {
+              "title": "Product"
+            }
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
  </body>
 </html>
