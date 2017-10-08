@@ -21,6 +21,9 @@
      .bold {
        font-weight: bold;
      }
+     .block {
+       display:block;
+     }
      ul {
        list-style: none;
      }
@@ -35,11 +38,15 @@
     <nav toolbar="(min-width: 784px)"
       toolbar-target="target-element-right">
     </nav>
-    <ul>
+    <a href="/" class="block">All Models</a>
+    <hr/>
+    <a href="/" class="block">Thompson Motors</a>
+    <a href="/" class="block">Login</a>
+    <!-- <ul>
       <li>All Models</li>
       <li>Thompson Motors</li>
       <li>Login</li>
-    </ul>
+    </ul> -->
   </amp-sidebar>
   
   <div class ="header">
@@ -155,11 +162,10 @@
 </p>
   
   <!-- USER ANALYTICS - MAKE SURE TO COMMENT FOR VALIDATION-->
-  <amp-analytics type="googleanalytics">
+  <!-- <amp-analytics type="googleanalytics">
     <script type="application/json">
       {
         "vars": {
-          <!-- get this in your google analytics acct -->
           "account": ""
         },
         "triggers": {
@@ -173,6 +179,6 @@
         }
       }
     </script>
-  </amp-analytics>
+  </amp-analytics> -->
  </body>
 </html>
