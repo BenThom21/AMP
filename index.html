@@ -41,7 +41,6 @@
       on="tap:sidebar-left.close"
       role="button"
       tabindex="0"> -->
-
     </amp-img>
     <nav toolbar="(min-width: 784px)"
       toolbar-target="target-element-right">
@@ -51,9 +50,16 @@
       <li> Nav item 6</li>
     </ul>
   </amp-sidebar>
-  <button on="tap:sidebar-right.toggle"
-  class="ampstart-btn caps m2">Menu</button>
   
+  <div class ="header">
+    <a id="sample-menu" on="tap:sidebar-right.toggle">
+      <amp-img srcset="https://i.imgur.com/8wXksCc.png"
+      width="24"
+      height="24"
+      alt="navigation"></amp-img>
+    </a>
+  </div>
+     
 
   <!-- Image gallery / AMP Carousel-->
   <amp-carousel 
