@@ -3,7 +3,7 @@
  <head>
    <meta charset="utf-8">
    <!-- TODO link to real page -->
-   <link rel="canonical" href="$Real_URL">
+   <link rel="canonical" href="#Real_URL">
    <title>The Thompson GoFast Model Specs | Thompson Motors</title>
    <meta property = "description" content = "The specs and details of the Thompson GoFast like 0-60 speed, torque, MPG, and more. Ask for a test drive today from your Thompson Motors dealer.">
    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -17,16 +17,24 @@
 
    <!-- make sure this is the only "amp-custom" style tag -->
    <style amp-custom>
-     /* import styles here, right? */
+
      .bold {
        font-weight: bold;
      }
      .block {
        display:block;
      }
+     .center {
+       text-align: center;
+     }
+     .social-share {
+       display: flex;
+       justify-content: space-around;
+     }
      ul {
        list-style: none;
      }
+
    </style>
  </head>
 
@@ -38,9 +46,9 @@
     <nav toolbar="(min-width: 784px)"
       toolbar-target="target-element-right">
     </nav>
-    <a href="/" class="block">All Models</a>
-    <hr/>
     <a href="/" class="block">Thompson Motors</a>
+    <hr/>
+    <a href="/" class="block">All Models</a>
     <a href="/" class="block">Login</a>
     <!-- <ul>
       <li>All Models</li>
@@ -79,19 +87,26 @@
     </amp-img>
   </amp-carousel>     
   <!-- MSRP price directly below image carousel -->
-  <p class="price-description">MSRP:
+  <p class="price-description center">MSRP:
     <span>From $94,310.00*</span>
   </p>
   
   <div class = "headText">
-    <h1>Technical Specs</h1>
-    <h2>GoFast Models</h2>
+    <h2 class = "center">GoFast Model Specs: The Hits</h2>
     <!-- TODO - want to add any text here? -->
+    <p class="info">
+      <ul>
+        <li><span class="bold"></span></li>
+        <li><span class="bold">Horse Power:</span> 370 hp</li>
+        <li><span class="bold">Fuel Consumption:</span> 30 MPG (Highway)</li>
+      </ul>
+    </p>
   </div>
 
 
 
 <!-- SPEC AREA -->
+<h3>Complete Specs</h3>
 <amp-accordion>
   <section>
     <h4>Engine</h4>
@@ -139,7 +154,7 @@
   </section>
 </amp-accordion>
 
-<!-- Social sharing -->
+<!-- SOAICL BUTTONS -->
 <!-- Need an app ID for social buttons to work -->
 <p class="social-share p1">
   <amp-social-share type="twitter"
@@ -161,7 +176,7 @@
     class="mr2"></amp-social-share>
 </p>
   
-  <!-- USER ANALYTICS - MAKE SURE TO COMMENT FOR VALIDATION-->
+  <!-- USER ANALYTICS - MAKE SURE TO COMMENT FOR VALIDATION -->
   <!-- <amp-analytics type="googleanalytics">
     <script type="application/json">
       {
