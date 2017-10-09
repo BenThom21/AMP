@@ -38,7 +38,9 @@
    </style>
  </head>
 
+ 
  <body>
+  <!-- START NAVIGATION -->
   <amp-sidebar id="sidebar-right"
     layout="nodisplay"
     side="right">
@@ -50,14 +52,10 @@
     <hr/>
     <a href="/" class="block">All Models</a>
     <a href="/" class="block">Login</a>
-    <!-- <ul>
-      <li>All Models</li>
-      <li>Thompson Motors</li>
-      <li>Login</li>
-    </ul> -->
   </amp-sidebar>
   
-  <div class ="header">
+  <!-- This is the burger menu that toggles open the AMP sidebar nav menu -->
+  <div class ="nav">
     <a id="sample-menu" on="tap:sidebar-right.toggle">
       <amp-img srcset="https://i.imgur.com/8wXksCc.png"
       width="24"
@@ -65,6 +63,7 @@
       alt="navigation"></amp-img>
     </a>
   </div>
+  <!-- END NAVIGATION -->
      
 
   <!-- Image gallery / AMP Carousel-->
@@ -93,10 +92,10 @@
   
   <div class = "headText">
     <h2 class = "center">GoFast Model Specs: The Hits</h2>
-    <!-- TODO - want to add any text here? -->
     <p class="info">
+      <!-- Add most important specs here! -->
       <ul>
-        <li><span class="bold"></span></li>
+        <li><span class="bold">0-60:</span> 4.2 sec</li>
         <li><span class="bold">Horse Power:</span> 370 hp</li>
         <li><span class="bold">Fuel Consumption:</span> 30 MPG (Highway)</li>
       </ul>
