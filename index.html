@@ -32,11 +32,11 @@
        list-style: none;
      }
 
+
      /* Nav/sidebar styles */
     .top-nav {
        background-color: rgb(214, 214, 214);
        height: 30px;
-       margin-bottom: 8px;
      }
      .logo {
        position: fixed;
@@ -50,9 +50,19 @@
        margin-top: 3px;
        margin-right: 5px;
      }
+     .sidebar > a {
+       margin: 15px 8px;
+     }
 
+
+     /* Body styles */
+     .carousel {
+      background-color: rgb(214, 214, 214);
+      padding-top: 15px;
+     }
      .price-description {
        margin-top: none;
+       padding-bottom: 10px;
      }
      .spec-head {
        margin-bottom: none;
@@ -71,9 +81,10 @@
   <!-- START NAVIGATION -->
   <amp-sidebar id="sidebar-right"
     layout="nodisplay"
-    side="right">
-    <!-- ERROR: Tag 'amp-sidebar > nav' must have 1 child tags - saw 0 child tags.
-    it still works without it? -->
+    side="right"
+    class="sidebar">
+    <!-- ERROR: "Tag 'amp-sidebar > nav' must have 1 child tags - saw 0 child tags."
+    But...it still works without it? -->
     <!-- <nav toolbar="(min-width: 784px)"
       toolbar-target="target-element-right">
     </nav> -->
@@ -81,6 +92,7 @@
     <hr/>
     <a href="/" class="block">All Models</a>
     <a href="/" class="block">Login</a>
+    <!-- If text doesn't fit, use amp-fit-text (https://www.ampproject.org/docs/reference/components/amp-fit-text) -->
   </amp-sidebar>
   
   <!-- This is the burger menu that toggles open the AMP sidebar nav menu -->
@@ -109,7 +121,8 @@
      
 
   <!-- Image gallery / AMP Carousel-->
-  <amp-carousel 
+  <div class = "carousel">
+    <amp-carousel 
     width="736"
     height="439"
     layout="responsive"
@@ -126,11 +139,12 @@
       layout="responsive"
       alt="GoFast Back">
     </amp-img>
-  </amp-carousel>     
-  <!-- MSRP price directly below image carousel -->
-  <p class="price-description center">MSRP:
-    <span>From $94,310.00*</span>
-  </p>
+    </amp-carousel>     
+    <!-- MSRP price directly below image carousel -->
+    <p class="price-description center">MSRP:
+      <span>From $94,310.00*</span>
+    </p>
+  </div>
   
   <div class = "headText">
     <h2 class = "center">GoFast Model Specs: The Hits</h2>
