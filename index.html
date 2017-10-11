@@ -17,33 +17,49 @@
 
    <!-- make sure this is the only "amp-custom" style tag -->
    <style amp-custom>
-
+    /* Overall styles */
      .bold {
        font-weight: bold;
      }
      .block {
        display:block;
+       text-decoration: none;
      }
      .center {
        text-align: center;
      }
-     .social-share {
-       display: flex;
-       justify-content: space-around;
+     ul {
+       list-style: none;
      }
-     /* ugh */
-     .nav {
-       display: inline-block;
-       text-align: right;
+
+     /* Nav/sidebar styles */
+    .top-nav {
+       background-color: rgb(214, 214, 214);
+       height: 30px;
+       margin-bottom: 8px;
      }
+     .logo {
+       position: fixed;
+       left: 0;
+       display: inline;
+     }
+     .nav-button {
+       position: fixed;
+       right: 0;
+       display: inline;
+       margin-top: 3px;
+     }
+
      .price-description {
        margin-top: none;
      }
      .spec-head {
        margin-bottom: none;
      }
-     ul {
-       list-style: none;
+
+     .social-share {
+       display: flex;
+       justify-content: space-around;
      }
 
    </style>
@@ -67,13 +83,26 @@
   </amp-sidebar>
   
   <!-- This is the burger menu that toggles open the AMP sidebar nav menu -->
-  <div class ="nav">
-    <a id="sample-menu" on="tap:sidebar-right.toggle">
-      <amp-img srcset="https://i.imgur.com/8wXksCc.png"
-      width="24"
-      height="24"
-      alt="navigation"></amp-img>
-    </a>
+  <div class ="top-nav">
+    <div class="logo">
+      <!-- Nxt: add logo image here -->
+      <a href="/">
+        <amp-img alt="Thompson Motors Logo"
+        src="https://i.imgur.com/HFtPUSf.png"
+        width="30"
+        height="30">
+      </amp-img>
+      </a>
+    </div>
+    <div class = "nav-button">
+      <a id="sample-menu" on="tap:sidebar-right.toggle">
+        <amp-img srcset="https://i.imgur.com/8wXksCc.png"
+        width="24"
+        height="24"
+        alt="hamburger navigation">
+        </amp-img>
+      </a>
+    </div> 
   </div>
   <!-- END NAVIGATION -->
      
