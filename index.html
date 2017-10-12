@@ -67,10 +67,19 @@
        margin-top: none;
        padding-bottom: 10px;
      }
-
+     h2.main {
+       margin: 15px;
+     }
+     .info {
+       font-size: 1.2em;
+     }
+     .highlight {
+       color: #950014;
+     }
      h3.spec-head {
        padding-left: 12px;
        margin-bottom: 8px;
+       font-size: 1.3em;
      }
      h4 {
        /* keep these two numbers the same to keep spec accordian headers centered */
@@ -98,11 +107,6 @@
     layout="nodisplay"
     side="right"
     class="sidebar">
-    <!-- ERROR: "Tag 'amp-sidebar > nav' must have 1 child tags - saw 0 child tags."
-    But...it still works without it? -->
-    <!-- <nav toolbar="(min-width: 784px)"
-      toolbar-target="target-element-right">
-    </nav> -->
     <a href="/" class="block">Thompson Motors</a>
     <hr/>
     <a href="/" class="block">All Models</a>
@@ -113,7 +117,7 @@
   <!-- This is the burger menu that toggles open the AMP sidebar nav menu -->
   <div class ="top-nav">
     <div class="logo">
-      <!-- Nxt: add logo image here -->
+      <!-- Next: add logo image here -->
       <a href="/">
         <amp-img alt="Thompson Motors Logo"
         src="https://i.imgur.com/HFtPUSf.png"
@@ -163,12 +167,12 @@
   
   <div class = "headText">
     <h2 class = "main center">GoFast Model Highlights</h2>
-    <p class="info">
+    <p>
       <!-- Next: Add most important specs here! -->
-      <ul>
-        <li><span class="bold">0-60:</span> 4.2 sec</li>
-        <li><span class="bold">Horse Power:</span> 370 hp</li>
-        <li><span class="bold">Fuel Consumption:</span> 30 MPG (Highway)</li>
+      <ul class= "info">
+        <li><span class="bold highlight">0-60:</span> 4.2 sec</li>
+        <li><span class="bold highlight">Horse Power:</span> 370 hp</li>
+        <li><span class="bold highlight">Fuel Consumption:</span> 30 MPG (Highway)</li>
       </ul>
     </p>
   </div>
@@ -225,7 +229,7 @@
 </amp-accordion>
 
 <!-- SOAICL BUTTONS -->
-<!-- Next: Need an app ID for social buttons to work -->
+<!-- Next: Need an app ID for some social buttons to work -->
 <p class="social-share p1">
   <amp-social-share type="twitter"
     width="48"
