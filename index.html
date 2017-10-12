@@ -37,6 +37,10 @@
     .top-nav {
        background-color: rgb(214, 214, 214);
        height: 30px;
+       width: 100%;
+       position: fixed;
+       top: 0;
+       z-index: 1000;
      }
      .logo {
        position: fixed;
@@ -63,9 +67,20 @@
        margin-top: none;
        padding-bottom: 10px;
      }
-     section {
-       /* TODO: Fix this crap */
-       height: 30px;
+
+     h3.spec-head {
+       padding-left: 12px;
+       margin-bottom: 8px;
+     }
+     h4 {
+       /* keep these two numbers the same to keep spec accordian headers centered */
+       height: 50px;
+       line-height: 50px;
+       white-space: nowrap;
+       padding-left: 12px;
+     }
+     .description > li {
+       margin: 10px 0px 10px 0px;
      }
 
      .social-share {
@@ -147,7 +162,7 @@
   </div>
   
   <div class = "headText">
-    <h2 class = "center">GoFast Model Specs: The Hits</h2>
+    <h2 class = "main center">GoFast Model Highlights</h2>
     <p class="info">
       <!-- Next: Add most important specs here! -->
       <ul>
@@ -202,7 +217,7 @@
       <li><span class="bold">Width:</span> 71.2 in. (w/o mirrors)</li>
       <li><span class="bold">Height:</span> 50.9 in. (1,294 mm)</li>
       <li><span class="bold">Wheelbase:</span> 96.5 in. (2,450 mm)</li>
-      <li><span class="bold">Drag Coefficient (Cd):</span> (Cd): 0.29</li>
+      <li><span class="bold">Drag Coefficient (Cd):</span> 0.29</li>
       <li><span class="bold">Curb Weight:</span> 3,152 lbs</li>
       <li><span class="bold">Fuel Tank Capacity:</span> 16.9 gal</li>
     </ul>
@@ -213,21 +228,21 @@
 <!-- Next: Need an app ID for social buttons to work -->
 <p class="social-share p1">
   <amp-social-share type="twitter"
-    width="60"
-    height="44"
+    width="48"
+    height="36"
     class="mr2"></amp-social-share>
   <amp-social-share type="facebook"
-    width="60"
-    height="44"
+    width="48"
+    height="36"
     data-attribution="254325784911610"
     class="mr2"> </amp-social-share>
   <amp-social-share type="gplus"
-    width="60"
-    height="44"
+    width="48"
+    height="36"
     class="mr2"></amp-social-share>
   <amp-social-share type="email"
-    width="60"
-    height="44"
+    width="48"
+    height="36"
     class="mr2"></amp-social-share>
 </p>
   
